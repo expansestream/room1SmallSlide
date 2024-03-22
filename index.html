@@ -9,11 +9,11 @@
 
 .fade {
   animation-name: fade;
-  animation-duration: 1s;
+  animation-duration: .25s;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .8} 
   to {opacity: 1}
 }
 
@@ -705,7 +705,7 @@ function showSlides() {
   console.log (slideIndex);
   slides[slideIndex-1].style.display = "block";
   console.log (slideIndex-1);  
-  setTimeout(showSlides, 4000); // Change image every 4 seconds
+  setTimeout(showSlides, 125); // Change image every 1/2 second
 }
 
 </script>
